@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637F31A62733386900E8E335 /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 637F31A52733386900E8E335 /* Obstacle.sks */; };
 		63A6F7F22727177F002FAB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6F7F12727177F002FAB45 /* AppDelegate.swift */; };
 		63A6F7F42727177F002FAB45 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 63A6F7F32727177F002FAB45 /* GameScene.sks */; };
 		63A6F7F62727177F002FAB45 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 63A6F7F52727177F002FAB45 /* Actions.sks */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		637F31A52733386900E8E335 /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
 		63A6F7EE2727177F002FAB45 /* HoppyBunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoppyBunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A6F7F12727177F002FAB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A6F7F32727177F002FAB45 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				63A6F7F32727177F002FAB45 /* GameScene.sks */,
 				63A6F7F52727177F002FAB45 /* Actions.sks */,
 				63A6F80827271CD9002FAB45 /* Hero.sks */,
+				637F31A52733386900E8E335 /* Obstacle.sks */,
 				63A6F7F72727177F002FAB45 /* GameScene.swift */,
 				63A6F7F92727177F002FAB45 /* GameViewController.swift */,
 				63A6F7FB2727177F002FAB45 /* Main.storyboard */,
@@ -141,6 +144,7 @@
 				63A6F80927271CD9002FAB45 /* Hero.sks in Resources */,
 				63A6F80227271781002FAB45 /* LaunchScreen.storyboard in Resources */,
 				63A6F7F62727177F002FAB45 /* Actions.sks in Resources */,
+				637F31A62733386900E8E335 /* Obstacle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
