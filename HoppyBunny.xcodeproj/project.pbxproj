@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		635E46D12741C12B00A3B32D /* GameEffects.sks in Resources */ = {isa = PBXBuildFile; fileRef = 635E46D02741C12B00A3B32D /* GameEffects.sks */; };
 		637F31A62733386900E8E335 /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 637F31A52733386900E8E335 /* Obstacle.sks */; };
+		639BCC57273F2A7400F59362 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BCC56273F2A7400F59362 /* MSButtonNode.swift */; };
 		63A6F7F22727177F002FAB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6F7F12727177F002FAB45 /* AppDelegate.swift */; };
 		63A6F7F42727177F002FAB45 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 63A6F7F32727177F002FAB45 /* GameScene.sks */; };
 		63A6F7F62727177F002FAB45 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 63A6F7F52727177F002FAB45 /* Actions.sks */; };
@@ -21,7 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		635E46D02741C12B00A3B32D /* GameEffects.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameEffects.sks; sourceTree = "<group>"; };
 		637F31A52733386900E8E335 /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
+		639BCC56273F2A7400F59362 /* MSButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 		63A6F7EE2727177F002FAB45 /* HoppyBunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoppyBunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A6F7F12727177F002FAB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A6F7F32727177F002FAB45 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				63A6F7F12727177F002FAB45 /* AppDelegate.swift */,
+				635E46D02741C12B00A3B32D /* GameEffects.sks */,
 				63A6F7F32727177F002FAB45 /* GameScene.sks */,
 				63A6F7F52727177F002FAB45 /* Actions.sks */,
 				63A6F80827271CD9002FAB45 /* Hero.sks */,
@@ -76,6 +81,7 @@
 				63A6F7FE27271781002FAB45 /* Assets.xcassets */,
 				63A6F80027271781002FAB45 /* LaunchScreen.storyboard */,
 				63A6F80A27273891002FAB45 /* CoreGraphics.swift */,
+				639BCC56273F2A7400F59362 /* MSButtonNode.swift */,
 			);
 			path = HoppyBunny;
 			sourceTree = "<group>";
@@ -138,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635E46D12741C12B00A3B32D /* GameEffects.sks in Resources */,
 				63A6F7FD2727177F002FAB45 /* Main.storyboard in Resources */,
 				63A6F7F42727177F002FAB45 /* GameScene.sks in Resources */,
 				63A6F7FF27271781002FAB45 /* Assets.xcassets in Resources */,
@@ -159,6 +166,7 @@
 				63A6F7FA2727177F002FAB45 /* GameViewController.swift in Sources */,
 				63A6F7F22727177F002FAB45 /* AppDelegate.swift in Sources */,
 				63A6F80B27273891002FAB45 /* CoreGraphics.swift in Sources */,
+				639BCC57273F2A7400F59362 /* MSButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
