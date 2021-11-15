@@ -29,12 +29,19 @@ class GameScene: SKScene {
     
     // Numbers
     let scrollSpeed: CGFloat = 100
+    var points = 0
     
     // Buttons
     var buttonRestart: MSButtonNode!
     
     // Game management
     var gameState: GameSceneState = .active
+    
+    // Score Label
+    var scoreLabel: SKLabelNode!
+    
+    
+
     
     
     // MARK: didMove
@@ -63,6 +70,9 @@ class GameScene: SKScene {
         /* Set UI connections */
         buttonRestart = (self.childNode(withName: "buttonRestart") as! MSButtonNode)
         
+        scoreLabel = (self.childNode(withName: "scoreLabel") as! SKLabelNode)
+
+        
         /* Setup restart button selection handler */
         buttonRestart.selectedHandler = {
             
@@ -81,6 +91,9 @@ class GameScene: SKScene {
         
         /* Hide restart button */
         buttonRestart.state = .MSButtonNodeStateHidden
+        
+        /* Reset Score label */
+        scoreLabel.text = "\(points)"
         
         
     }
@@ -214,6 +227,28 @@ extension GameScene: SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
         /* Hero touches anything, game over */
         
+        /* Get references to bodies involved in collision */
+        let contactA = contact.bodyA
+        let contactB = contact.bodyB
+
+        /* Get references to the physics body parent nodes */
+        let nodeA = contactA.node!
+        let nodeB = contactB.node!
+
+        /* Did our hero pass through the 'goal'? */
+        if nodeA.name == "goal" || nodeB.name == "goal" {
+
+          /* Increment points */
+          points += 1
+
+          /* Update score label */
+          scoreLabel.text = String(points)
+
+          /* We can return now */
+            print("hit goal")
+          return
+        }
+        
         /* Ensure only called while game running */
         if gameState != .active { return }
         
@@ -236,6 +271,9 @@ extension GameScene: SKPhysicsContactDelegate {
             self.hero.zRotation = CGFloat(-90).degreesToRadians()
         })
         
+        /* Run action */
+        hero.run(heroDeath)
+        
         /* Load the shake action resource */
         let shakeScene:SKAction = SKAction.init(named: "Shake")!
         
@@ -245,11 +283,6 @@ extension GameScene: SKPhysicsContactDelegate {
             /* Apply effect each ground node */
             node.run(shakeScene)
         }
-        
-        /* Run action */
-        hero.run(heroDeath)
-        
-        
         
         /* Show restart button */
         buttonRestart.state = .MSButtonNodeStateActive
